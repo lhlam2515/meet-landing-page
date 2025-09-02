@@ -142,13 +142,13 @@ body {
   position: relative;
   display: flex;
   padding: var(--spacing-800) var(--spacing-400);
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: var(--spacing-800);
   align-self: stretch;
 
   background: var(--footer-image) 50% / cover no-repeat;
 }
+
 .footer-content::before {
   content: "";
   position: absolute;
@@ -158,8 +158,13 @@ body {
   z-index: 0;
 }
 
-.footer-content * {
+.footer-text {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300);
+  align-self: stretch;
   z-index: 1;
 }
 
@@ -175,4 +180,10 @@ body {
   text-align: center;
 
   font: var(--text-preset-4);
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
