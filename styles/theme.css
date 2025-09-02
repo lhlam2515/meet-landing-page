@@ -16,11 +16,11 @@
 
   /* Typography */
   --font-family: "Red Hat Display", ui-sans-serif, system-ui, sans-serif;
-  --text-preset-1: 900 4rem/110%;
-  --text-preset-2: 900 2.5rem/110%;
-  --text-preset-3: 900 1rem/110%;
-  --text-preset-4: 500 1.125rem/110%;
-  --text-preset-5: 900 1rem/150%;
+  --text-preset-1: 900 4rem/110% var(--font-family);
+  --text-preset-2: 900 2.5rem/110% var(--font-family);
+  --text-preset-3: 900 1rem/110% var(--font-family);
+  --text-preset-4: 500 1.125rem/110% var(--font-family);
+  --text-preset-5: 900 1rem/150% var(--font-family);
 
   /* Spacing */
   --spacing-50: 0.25rem;
