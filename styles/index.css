@@ -187,3 +187,34 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+@media (min-width: 40rem) {
+  .hero {
+    padding: var(--spacing-800) var(--spacing-400);
+    gap: var(--spacing-900);
+  }
+
+  .hero-content {
+    max-width: 28rem;
+  }
+
+  .hero-cta {
+    flex-direction: row;
+    gap: var(--spacing-100);
+  }
+
+  .main-content {
+    padding: var(--spacing-700) var(--spacing-400) var(--spacing-800);
+  }
+
+  .collage-images {
+    grid-template: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-300);
+  }
+
+  .content-text,
+  .footer-text {
+    max-width: 32rem;
+  }
+}
