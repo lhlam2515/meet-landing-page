@@ -219,6 +219,10 @@ body {
 }
 
 @media (min-width: 68rem) {
+  .header {
+    padding-top: var(--spacing-1000);
+  }
+
   .hero {
     padding: var(--spacing-800) var(--spacing-1000);
     flex-direction: row;
