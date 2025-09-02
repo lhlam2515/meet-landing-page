@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
+  --font-family: "Red Hat Display", ui-sans-serif, system-ui, sans-serif;
+
   /* Colors */
   --color-cyan-300: hsl(192, 90%, 77%);
   --color-cyan-600: hsl(192, 37%, 48%);
@@ -14,14 +16,6 @@
 
   --color-white: hsl(0, 0%, 98%);
 
-  /* Typography */
-  --font-family: "Red Hat Display", ui-sans-serif, system-ui, sans-serif;
-  --text-preset-1: 900 4rem/110% var(--font-family);
-  --text-preset-2: 900 2.5rem/110% var(--font-family);
-  --text-preset-3: 900 1rem/110% var(--font-family);
-  --text-preset-4: 500 1.125rem/110% var(--font-family);
-  --text-preset-5: 900 1rem/150% var(--font-family);
-
   /* Spacing */
   --spacing-50: 0.25rem; /* 4px */
   --spacing-100: 0.5rem; /* 8px */
@@ -34,11 +28,43 @@
   --spacing-900: 4.5rem; /* 72px */
   --spacing-1000: 5rem; /* 80px */
   --spacing-1400: 7rem; /* 112px */
+}
 
-  /* Footer Images */
-  --footer-img-mobile: url("../assets/mobile/image-footer.jpg");
-  --footer-img-tablet: url("../assets/tablet/image-footer.jpg");
-  --footer-img-desktop: url("../assets/desktop/image-footer.jpg");
+/* Mobile Styles */
+:root {
+  --text-preset-1: 900 2.5rem/110% var(--font-family);
+  --text-preset-2: 900 2rem/110% var(--font-family);
+  --text-preset-3: 900 0.75rem/110% var(--font-family);
+  --text-preset-4: 500 1rem/110% var(--font-family);
+  --text-preset-5: 900 1rem/150% var(--font-family);
+
+  --footer-image: url("../assets/mobile/image-footer.jpg");
+}
+
+/* Tablet Styles */
+@media (min-width: 40rem) {
+  :root {
+    --text-preset-1: 900 3rem/110% var(--font-family);
+    --text-preset-2: 900 2.25rem/110% var(--font-family);
+    --text-preset-3: 900 0.875rem/110% var(--font-family);
+    --text-preset-4: 500 1rem/150% var(--font-family);
+    --text-preset-5: 900 1.125rem/150% var(--font-family);
+
+    --footer-image: url("../assets/tablet/image-footer.jpg");
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 64rem) {
+  :root {
+    --text-preset-1: 900 4rem/110% var(--font-family);
+    --text-preset-2: 900 2.5rem/110% var(--font-family);
+    --text-preset-3: 900 1rem/110% var(--font-family);
+    --text-preset-4: 500 1.125rem/150% var(--font-family);
+    --text-preset-5: 900 1rem/150% var(--font-family);
+
+    --footer-image: url("../assets/desktop/image-footer.jpg");
+  }
 }
 
 .btn {

@@ -54,7 +54,7 @@ body {
 
 .hero-title {
   text-align: center;
-  font: var(--text-preset-2);
+  font: var(--text-preset-1);
 }
 
 .hero-description {
@@ -145,7 +145,7 @@ body {
   align-items: center;
   gap: var(--spacing-800);
 
-  background: var(--footer-img-mobile) 50% / cover no-repeat;
+  background: var(--footer-image) 50% / cover no-repeat;
 }
 .footer-content::before {
   content: "";
